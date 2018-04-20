@@ -1,8 +1,11 @@
+/* Universal Styles */
+
 * {
   font-family: helvetica;
   font-size: 22px;
   color: seashell;
   opacity: 0.9;
+  box-sizing: border-box;
 }
 
 body {
@@ -24,6 +27,8 @@ h4 {
   padding: 10px;
   margin: 0;
 }
+
+/* Header */
 
 header {
   display: flex;
@@ -54,6 +59,8 @@ nav span {
   padding: 10px;
 }
 
+/* Universal Styles - Content */
+
 .content {
   position: absolute;
   top: 69px;
@@ -68,7 +75,7 @@ nav span {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 10px auto;
+  margin-bottom: 10px auto;
 }
 
 .text-content {
@@ -78,6 +85,8 @@ nav span {
   justify-content: center;
 }
 
+/* Content - Mission */
+
 .mission {
   width: 1200px;
   height: 700px;
@@ -85,9 +94,12 @@ nav span {
 }
 
 .mission .text-content {
+  background-color: black;
   padding: 5px;
   width: 1200px;
 }
+
+/* Content - Featured-tea */
 
 .featured-tea {
   margin: 50px auto 20px auto;
@@ -114,10 +126,13 @@ nav span {
   width: 300px;
 }
 
+/* Content - Locations */
+
 .locations {
   background-image: url(../images/img-locations-background.jpg);
-  height: 500px;
+  height: 550px;
   width: 1200px;
+  margin-bottom: 10px;
 }
 
 .location-boxes {
@@ -135,21 +150,19 @@ nav span {
   width: 300px;
   height: 300px;
   background-color: black;
-  margin: 20px;
+  margin: 5px 20px;
   text-align: center;
+  opacity: 1;
 }
 
 .location-box .city {
   font-weight: bold;
 }
 
-.info {
-  height: 200px;
-}
+/* Footer */
 
-footer {
-  position: relative;
-  display: flex;
-  justify-content: flex-start;
-  z-index: 3;
+.footer {
+  display: block;
+  text-align: left;
+  width: 100%;
 }
